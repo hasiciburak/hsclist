@@ -1,0 +1,63 @@
+/*TODO: ADD HEADER STYLING HERE*/
+@use "../../../assets/scss/" as *;
+$clip-path-shape: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+
+.logo {
+  font-weight: 500;
+  color: $primary-color;
+  align-self: baseline;
+}
+
+.header-container {
+  width: 100vw;
+  height: 500px;
+  background-position-x: -300px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.emphasized {
+  font-weight: 700;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.add-todo-input {
+  padding-top: 30px;
+}
+
+.header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  clip-path: $clip-path-shape;
+}
+
+.header-overlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 500px;
+  background-color: rgba($primary-color, 0.2);
+  backdrop-filter: blur(3px);
+  clip-path: $clip-path-shape;
+}
+
+.logo-description {
+  color: $primary-color;
+  align-self: baseline;
+}

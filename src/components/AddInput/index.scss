@@ -1,0 +1,48 @@
+/*TODO: AddInput Files Here */
+@use "../../assets/scss/index" as *;
+
+.addinput-wrapper {
+  display: flex;
+  color: $primary-color;
+  width: 100%;
+  max-width: 800px;
+  gap: 0;
+  background-color: $white;
+  border-radius: 30px;
+  padding: 10px;
+  justify-self: center;
+}
+
+.addinput-input {
+  flex-basis: 85%;
+  border: 0;
+  padding-left: 30px;
+}
+
+.addinput-input::placeholder {
+  flex-basis: 85%;
+  border: 0;
+}
+
+.addinput-input:focus-visible {
+  outline: none;
+}
+:is(.addinput-input:focus-visible) .addinput-wrapper {
+  border: 1px solid blue;
+}
+
+.addinput-button {
+  flex: 1 1 0;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: $white;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.addinput-button:hover {
+  filter: brightness(1.2);
+  transition: all 0.15s ease-in-out;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "hsclist",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@djthoms/pretty-checkbox": "^3.1.0",
+    "pretty-checkbox-react": "^4.0.0-beta.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "zustand": "^4.3.6"
+  },
+  "devDependencies": {
+    "@omlet/cli": "^1.0.1-beta.14",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "sass": "^1.58.3",
+    "vite": "^4.1.4"
+  }
+}

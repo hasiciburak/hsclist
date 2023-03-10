@@ -1,0 +1,19 @@
+/*TODO: ADD TODOCARD STYLES HERE*/
+@use "../../assets/scss/index" as *;
+
+.todo-card-wrapper {
+  width: 100%;
+
+  border: 2px solid $primary-color;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.todo-checkbox{
+    font-size: 24px;
+}
