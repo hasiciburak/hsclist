@@ -1,6 +1,6 @@
-import React from "react";
-import headerImg from "../../../assets/img/header-background.jpg";
-import AddInput from "../../AddInput/index";
+import React from "react"
+import headerImg from "../../../assets/img/header-background.jpg"
+import AddInput from "../../AddInput/index"
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
       <img src={headerImg} alt={"Header image"} className="header-img" />
       <div className="header-overlay"></div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const TodoContainer = (props) => {
   return (
@@ -9,7 +9,7 @@ const TodoContainer = (props) => {
         <div className="todo-card-area">{props.children}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TodoContainer;
+export default TodoContainer

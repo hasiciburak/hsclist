@@ -3,7 +3,6 @@
 
 .todo-card-wrapper {
   width: 100%;
-
   border: 2px solid $primary-color;
   padding: 20px 20px;
   border-radius: 10px;
@@ -14,6 +13,10 @@
   overflow: hidden;
 }
 
-.todo-checkbox{
-    font-size: 24px;
+.todo-checkbox {
+  font-size: 24px;
+}
+
+.state-checked {
+  text-decoration: line-through;
 }

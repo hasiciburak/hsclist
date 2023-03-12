@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const AddInput = () => {
   return (
@@ -10,7 +10,7 @@ const AddInput = () => {
       />
       <button className="addinput-button">Add Todo</button>
     </div>
-  );
-};
+  )
+}
 
-export default AddInput;
+export default AddInput
