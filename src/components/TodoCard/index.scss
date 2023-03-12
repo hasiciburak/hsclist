@@ -11,10 +11,14 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  p {
+    cursor: pointer;
+  }
 }
 
 .todo-checkbox {
   font-size: 24px;
+  cursor: pointer;
 }
 
 .state-checked {

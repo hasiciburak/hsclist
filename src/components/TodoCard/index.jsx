@@ -1,5 +1,5 @@
 import { Checkbox, useCheckboxState } from "pretty-checkbox-react"
-import React from "react"
+import { useEffect } from "react"
 import "@djthoms/pretty-checkbox"
 import { Check } from "react-feather"
 
@@ -8,8 +8,10 @@ import { Check } from "react-feather"
  *
  */
 const TodoCard = (props) => {
-  const checkboxState = useCheckboxState()
-
+  let checkboxState = useCheckboxState()
+  useEffect(() => {
+    props.done !== undefined && checkboxState.setState(props.done)
+  }, [])
   return (
     <div className="todo-card-wrapper">
       <div className="check-col" color="info-o">
@@ -24,11 +26,18 @@ const TodoCard = (props) => {
         />
       </div>
       <div className="description-col">
-        <p className={`${checkboxState.state && "state-checked"}`}>
+        <p
+          onClick={() => {
+            checkboxState.setState(!checkboxState.state)
+          }}
+          className={`${checkboxState.state && "state-checked"}`}
+        >
           {props.children}
         </p>
       </div>
-      <div className="trash-col">Trash</div>
+      <div className="trash-col" onClick={() => {}}>
+        Trash
+      </div>
     </div>
   )
 }
